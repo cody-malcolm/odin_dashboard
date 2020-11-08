@@ -22,6 +22,67 @@ a:hover {
   color: #000;
 }
 
+h1 {
+  font-size: 2.5em;
+  color: #FB8C00;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+
+h6 {
+  font-size: 2.5em;
+}
+
+h2, h3, h4, h6 {
+  color: #636363;
+}
+
+p {
+  margin: 1em 0;
+  font-size: 1.25em;
+  color: #888;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.dashboard-username {
+  font-size: 1.25em;
+  color: #333;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.dashboard-container {
+
+}
+
+.main > div {
+  padding: 2.5em 0 1.5em 0;
+  width: 80%;
+}
+
 .fab.orange600 { color: #FB8C00; }
 .logo-text {
   font-family: "Norse";

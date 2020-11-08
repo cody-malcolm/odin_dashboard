@@ -57,6 +57,30 @@ p {
   color: #888;
 }
 
+button {
+  color: white;
+  padding: 0.75em 3em;
+  font-size: 1.25em;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  margin: 1em 0;
+  box-shadow: 2px 2px 1px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+#continue-button {
+  background-color: hsl(180, 95%, 42%);
+}
+
+#discord-button {
+  background-color: #FB8C00;
+}
+
 .bold-text {
   font-weight: bold;
 }
@@ -83,7 +107,14 @@ p {
   width: 80%;
 }
 
-.fab.orange600 { color: #FB8C00; }
+.fab.orange600 {
+  color: #FB8C00;
+}
+
+.fab.orange600:hover {
+  color: #000;
+}
+
 .logo-text {
   font-family: "Norse";
   color: #FB8C00;
@@ -146,6 +177,10 @@ p {
   display: block;
 }
 
+.sm-link:hover {
+
+}
+
 .links {
   display: flex;
   flex-direction: column;
@@ -156,6 +191,8 @@ p {
 }
 
 .footer-link {
+  display: flex;
+  align-items: center;
   border: 1px solid red;
   height: 33%;
 }

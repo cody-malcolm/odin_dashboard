@@ -3,6 +3,98 @@
   src: url(fonts/Norse.otf);
 }
 
+body {
+  font-family: "Open Sans", "Helvetica Neue";
+}
+
+div {
+  border: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: #636363;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #000;
+}
+
+.fab.orange600 { color: #FB8C00; }
 .logo-text {
   font-family: "Norse";
+  color: #FB8C00;
+  font-size: 2em;
+}
+
+.sm-img {
+  height: 2em;
+}
+
+.med-img {
+  height: 5em;
+}
+
+.lrg-img {
+  height: 8em;
+}
+
+.menu-img {
+  padding-left: 1em;
+}
+
+.header {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-link, .menu-divider {
+  margin: 0.25em 0.5em;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10em;
+}
+
+.footer-logo, .links {
+  width: 33%;
+}
+
+.logo, .footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+}
+
+.sm-link {
+  display: block;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: space-between;
+  align-content: space-around;
+}
+
+.footer-link {
+  border: 1px solid red;
+  height: 33%;
 }

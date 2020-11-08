@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Norse";
+  src: url(fonts/Norse.otf);
+}
+
+.logo-text {
+  font-family: "Norse";
+}

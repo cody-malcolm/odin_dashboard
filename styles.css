@@ -7,10 +7,6 @@ body {
   font-family: "Open Sans", "Helvetica Neue";
 }
 
-div {
-  border: 1px solid black;
-}
-
 a {
   text-decoration: none;
   color: #636363;
@@ -99,7 +95,7 @@ button:hover {
 }
 
 .dashboard-container {
-
+  box-shadow: 0 20px 10px -10px rgba(0,0,0,0.08);
 }
 
 .main > div {
@@ -148,7 +144,46 @@ button:hover {
 }
 
 .menu-link, .menu-divider {
-  margin: 0.25em 0.5em;
+  margin: 0.25em 0.25em;
+}
+
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid hsla(110,0%,5%,0.2);
+  border-radius: 50%;
+  margin: 0.5em 0 1em;
+  width: 5.5em;
+  height: 5.5em;
+}
+
+.foundations-logo {
+  display: none;
+  height: 5.5em;
+}
+
+.progress-icon:hover {
+  cursor: pointer;
+  border: none;
+}
+
+.progress-icon:hover > .foundations-logo {
+  display:inline;
+}
+
+.progress-icon:hover > .completion-indicator {
+  display: none;
+}
+
+.completion-indicator {
+  padding: 0.25em;
 }
 
 .footer {
@@ -156,6 +191,7 @@ button:hover {
   align-items: center;
   justify-content: space-around;
   height: 10em;
+  margin-bottom: 6.5em;
 }
 
 .footer-logo, .links {
@@ -177,10 +213,6 @@ button:hover {
   display: block;
 }
 
-.sm-link:hover {
-
-}
-
 .links {
   display: flex;
   flex-direction: column;
@@ -193,6 +225,24 @@ button:hover {
 .footer-link {
   display: flex;
   align-items: center;
-  border: 1px solid red;
   height: 33%;
+}
+
+.fas.fa-comments {
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(180, 95%, 42%);
+  color: white;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+}
+
+.comments-icon {
+  position: fixed;
+  bottom: 10px;
+  right: -85vw;
+  cursor: pointer;
 }

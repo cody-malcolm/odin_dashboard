@@ -266,54 +266,41 @@ button:hover {
   border-radius: 50%;
   cursor: pointer;
   background-color: hsl(180, 95%, 42%);
+  position: fixed;
 }
 
 .fas.fa-comments {
   font-size: 2em;
   width: 2em;
+  bottom: 0.75em;
+  right: 0.75em;
+  z-index: 2;
 }
 
 .fas.fa-users, .fas.fa-comment {
   font-size: 1.25em;
   width: 2.5em;
-}
-
-.comments-icon, .users-container, .comment-container {
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-}
-
-.comments-icon {
-  bottom: 0.75em;
-  right: 0.75em;
-  z-index: 2;
-  width: min-content;
-}
-
-.users-container, .comment-container {
   bottom: 1.75em;
-  right: 1.25em;
+  right: 1.625em;
   opacity: 0.0;
   z-index: 1;
-  transition: 1s ease-out 0.25s;
-  width: min-content;
+  transition: 1s ease-out 0.25s, box-shadow 0s;
 }
 
-.comments-icon:hover > .fas.fa-comments {
+.fas.fa-comments:hover {
   box-shadow: 0 -5px 6px rgba(0,0,0,0.2);
 }
 
-.users-container:hover > .fas.fa-users, .comment-container:hover > .fas.fa-comment {
+.fas.fa-users:hover, .fas.fa-comment:hover {
   box-shadow: 0 -3px 4px rgba(0,0,0,0.2);
 }
 
-.comments-icon:hover ~ .users-container, .users-container:hover {
+.fas.fa-comments:hover ~ .fas.fa-users, .fas.fa-users:hover {
   bottom: 5.25em;
   opacity: 1.0;
 }
 
-.comments-icon:hover ~ .comment-container, .comment-container:hover, .users-container:hover ~ .comment-container {
+.fas.fa-comments:hover ~ .fas.fa-comment, .fas.fa-comment:hover, .fas.fa-users:hover ~ .fas.fa-comment {
   bottom: 8.25em;
   opacity: 1.0;
 }

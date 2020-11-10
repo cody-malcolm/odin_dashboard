@@ -35,6 +35,12 @@ The usual project is to create a clone of the Google Search Results page using H
 
 #### Final Thoughts
 
+This project was a lot of fun. I essentially haven't used HTML or CSS in two years, but The Odin page was different enough from the original Google project that I could use my old work as reference material without it being "cheating", and was able to pick it all back up very quickly - while the syntax might be rusty, I still remember how things work, what can be done, and where to find great reference materials. Additionally, due to the differences between the two pages, I was able to implement some additional features that aren't present in the Google page, such as implementing a custom font, the replacement effect of the completion indicator, or the popout icon in the bottom right.
+
+Speaking of the popout icon, unfortuately I wasn't able to get the popouts to work 100% correctly. Due to the limitations of CSS, you can modify sibling elements that occur later in the DOM, but not ones that appear before. As a result, if you hover over the uppermost popout icon (which is the one that appears later in the HTML), the lower icon will retreat. This functionality could be easily implemented using JavaScript, where you can modify anything in the DOM at will, but this project is meant to be done with HTML and CSS only, so I did the best I could with the tools available.
+
+As with my previous Google Search Results page, you can test the mobile responsiveness by resizing the browser window.
+
 ## Miscellaneous
 
 Read more about this project at The Odin Project's [Web Development curriculum](http://www.theodinproject.com/courses/web-development-101/lessons/html-css).

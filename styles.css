@@ -4,7 +4,8 @@
 }
 
 body {
-  font-family: "Open Sans", "Helvetica Neue";
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -115,6 +116,7 @@ button:hover {
   font-family: "Norse";
   color: #FB8C00;
   font-size: 2em;
+  font-weight: 600;
 }
 
 .sm-img {
@@ -139,7 +141,7 @@ button:hover {
 
 .menu {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
@@ -200,6 +202,7 @@ button:hover {
 
 .logo, .footer-logo {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -228,21 +231,63 @@ button:hover {
   height: 33%;
 }
 
-.fas.fa-comments {
-  font-size: 3em;
+.fas.fa-comments, .fas.fa-users, .fas.fa-comment {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsl(180, 95%, 42%);
   color: white;
   height: 2em;
-  width: 2em;
   border-radius: 50%;
+  cursor: pointer;
+  background-color: hsl(180, 95%, 42%);
+}
+
+.fas.fa-comments {
+  font-size: 3em;
+  width: 2em;
+}
+
+.fas.fa-users, .fas.fa-comment {
+  font-size: 2em;
+  width: 2.5em;
+}
+
+.comments-icon, .users-container, .comment-container {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
 }
 
 .comments-icon {
-  position: fixed;
-  bottom: 10px;
-  right: -85vw;
-  cursor: pointer;
+  bottom: 0.75em;
+  right: 0.75em;
+  z-index: 2;
+  width: min-content;
+}
+
+.users-container, .comment-container {
+  bottom: 1.75em;
+  right: 1.25em;
+  opacity: 0.0;
+  z-index: 1;
+  transition: 1s ease-out 0.25s;
+  width: min-content;
+}
+
+.comments-icon:hover > .fas.fa-comments {
+  box-shadow: 0 -5px 6px rgba(0,0,0,0.2);
+}
+
+.users-container:hover > .fas.fa-users, .comment-container:hover > .fas.fa-comment {
+  box-shadow: 0 -3px 4px rgba(0,0,0,0.2);
+}
+
+.comments-icon:hover ~ .users-container, .users-container:hover {
+  bottom: 7.5em;
+  opacity: 1.0;
+}
+
+.comments-icon:hover ~ .comment-container, .comment-container:hover, .users-container:hover ~ .comment-container {
+  bottom: 12.5em;
+  opacity: 1.0;
 }

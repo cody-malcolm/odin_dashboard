@@ -3,10 +3,6 @@
   src: url(fonts/Norse.otf);
 }
 
-div, img, p {
-  border: 1px solid black;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -101,7 +97,7 @@ button:hover {
 }
 
 .dashboard-container {
-  box-shadow: 0 20px 10px -10px rgba(0,0,0,0.08);
+  box-shadow: 0 20px 10px -10px rgba(0,0,0,0.13);
 }
 
 .inner-dashboard {
@@ -112,7 +108,7 @@ button:hover {
 
 .main > div {
   padding: 2.5em 0 1.5em 0;
-  width: 50em;
+  width: 40em;
 }
 
 .fab.orange600 {
@@ -160,6 +156,10 @@ button:hover {
   margin: 0.25em 0.25em;
 }
 
+.dropdown {
+  display: none;
+}
+
 .progress-container {
   display: flex;
   flex-direction: column;
@@ -190,7 +190,7 @@ button:hover {
 
 .path-info-text {
   width: min-content;
-  padding-right: 10em;
+  padding: 0 10em 0 1em;
 }
 
 .progress-icon:hover {
@@ -269,12 +269,12 @@ button:hover {
 }
 
 .fas.fa-comments {
-  font-size: 3em;
+  font-size: 2em;
   width: 2em;
 }
 
 .fas.fa-users, .fas.fa-comment {
-  font-size: 2em;
+  font-size: 1.25em;
   width: 2.5em;
 }
 
@@ -309,324 +309,75 @@ button:hover {
 }
 
 .comments-icon:hover ~ .users-container, .users-container:hover {
-  bottom: 7.5em;
+  bottom: 5.25em;
   opacity: 1.0;
 }
 
 .comments-icon:hover ~ .comment-container, .comment-container:hover, .users-container:hover ~ .comment-container {
-  bottom: 12.5em;
+  bottom: 8.25em;
   opacity: 1.0;
 }
 
 @media (max-width: 64em) {
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-
   a {
-    text-decoration: none;
-    color: #636363;
-    font-size: 1.5em;
-    font-weight: 500;
-  }
-
-  a:hover {
-    color: #000;
-  }
-
-  h1 {
-    font-size: 2.5em;
-    color: #FB8C00;
-    margin-bottom: 1em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #636363;
-  }
-
-  h3 {
-    font-size: 1.25em;
-    font-weight: bold;
-    color: #636363;
-  }
-
-  h4 {
-    text-transform: uppercase;
-    font-size: 0.75em;
-    color: #636363;
-  }
-
-  h6 {
-    font-size: 2.5em;
-    color: #636363;
-  }
-
-  p {
-    margin: 1em 0;
-    font-size: 1.25em;
-    color: #888;
-  }
-
-  button {
-    color: white;
-    padding: 0.75em 3em;
-    font-size: 1.25em;
-    font-weight: bold;
-    border-radius: 5px;
-    border: none;
-    margin: 1em 0;
-    box-shadow: 2px 2px 1px rgba(0,0,0,0.2);
-    cursor: pointer;
-  }
-
-  button:hover {
-    opacity: 0.6;
-  }
-
-  #continue-button {
-    background-color: hsl(180, 95%, 42%);
-  }
-
-  #discord-button {
-    background-color: #FB8C00;
-  }
-
-  .bold-text {
-    font-weight: bold;
-  }
-
-  .dashboard-username {
-    font-size: 1.25em;
-    color: #333;
-    padding-right: 8em;
-  }
-
-  .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 1.25em;
-  }
-
-  .dashboard-container {
-    box-shadow: 0 20px 10px -10px rgba(0,0,0,0.08);
-  }
-
-  .inner-dashboard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .main > div {
-    padding: 2.5em 0 1.5em 0;
-    width: 50em;
-  }
-
-  .fab.orange600 {
-    color: #FB8C00;
-  }
-
-  .fab.orange600:hover {
-    color: #000;
-  }
-
-  .logo-text {
-    font-family: "Norse";
-    color: #FB8C00;
-    font-size: 2em;
-    font-weight: 600;
-  }
-
-  .sm-img {
-    height: 2em;
-  }
-
-  .med-img {
-    height: 5em;
-  }
-
-  .lrg-img {
-    height: 8em;
-  }
-
-  .menu-img {
-    padding-left: 1em;
-  }
-
-  .header {
-    display: flex;
-  }
-
-  .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .menu-link, .menu-divider {
-    margin: 0.25em 0.25em;
-  }
-
-  .progress-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .inner-progress {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .progress-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 10px solid hsla(110,0%,5%,0.2);
-    border-radius: 50%;
-    margin: 0.5em 0 1em;
-    width: 5.5em;
-    height: 5.5em;
-  }
-
-  .foundations-logo {
-    display: none;
-    height: 5.5em;
-  }
-
-  .path-info-text {
-    width: min-content;
-    padding-right: 10em;
-  }
-
-  .progress-icon:hover {
-    cursor: pointer;
-    border: none;
-  }
-
-  .progress-icon:hover > .foundations-logo {
-    display:inline;
-  }
-
-  .progress-icon:hover > .completion-indicator {
-    display: none;
-  }
-
-  .completion-indicator {
-    padding: 0.25em;
-  }
-
-  .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 10em;
-    margin-bottom: 6.5em;
-  }
-
-  .footer-logo, .links {
-    width: 33%;
-  }
-
-  .logo, .footer-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .spacer {
-    width: 40%;
-  }
-
-  .social-media {
-    display: flex;
-    justify-content: space-around;
-    width: 20%;
+    font-size: 1em;
   }
 
   .sm-link {
-    display: block;
+    font-size: 1.5em;
+  }
+
+  .dashboard-username {
+    padding-right: 0em;
+  }
+
+  .inner-dashboard {
+    flex-direction: column;
+  }
+
+  .main > div {
+    width: 80%;
+  }
+
+  .inner-progress {
+    flex-direction: column;
+  }
+
+  .path-info-text {
+    padding: 0em;
+  }
+}
+
+@media (max-width: 48em) {
+  .footer-logo, .menu {
+    display: none;
+  }
+
+  .footer {
+    justify-content: space-between;
+  }
+
+  .social-media {
+    width: 45%;
   }
 
   .links {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 100%;
-    justify-content: space-between;
-    align-content: space-around;
+    width: 50%;
   }
 
-  .footer-link {
-    display: flex;
-    align-items: center;
-    height: 33%;
+  .links > a {
+    font-weight: bold;
   }
 
-  .fas.fa-comments, .fas.fa-users, .fas.fa-comment {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    height: 2em;
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: hsl(180, 95%, 42%);
-  }
-
-  .fas.fa-comments {
-    font-size: 3em;
-    width: 2em;
-  }
-
-  .fas.fa-users, .fas.fa-comment {
-    font-size: 2em;
-    width: 2.5em;
-  }
-
-  .comments-icon, .users-container, .comment-container {
+  .dropdown {
     display: flex;
     justify-content: flex-end;
-    position: fixed;
+    align-items: center;
   }
 
-  .comments-icon {
-    bottom: 0.75em;
-    right: 0.75em;
-    z-index: 2;
-    width: min-content;
-  }
-
-  .users-container, .comment-container {
-    bottom: 1.75em;
-    right: 1.25em;
-    opacity: 0.0;
-    z-index: 1;
-    transition: 1s ease-out 0.25s;
-    width: min-content;
-  }
-
-  .comments-icon:hover > .fas.fa-comments {
-    box-shadow: 0 -5px 6px rgba(0,0,0,0.2);
-  }
-
-  .users-container:hover > .fas.fa-users, .comment-container:hover > .fas.fa-comment {
-    box-shadow: 0 -3px 4px rgba(0,0,0,0.2);
-  }
-
-  .comments-icon:hover ~ .users-container, .users-container:hover {
-    bottom: 7.5em;
-    opacity: 1.0;
-  }
-
-  .comments-icon:hover ~ .comment-container, .comment-container:hover, .users-container:hover ~ .comment-container {
-    bottom: 12.5em;
-    opacity: 1.0;
+  .fas.fa-bars {
+    color: hsl(180, 95%, 42%);
+    margin: 1em;
+    font-size: 1.5em;
   }
 }

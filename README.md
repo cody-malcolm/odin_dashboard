@@ -8,8 +8,6 @@ To create a clone of the ~~Google Search Results page~~ Odin Dashboard using HTM
 
 ##### Main
 
-##### Main
-
 1. Don't be a perfectionist
  * The page is just supposed to look like ~~Google's~~ The Odin Project's page, not function like it
  * Spacing just needs to *similar*, not down to the pixel.

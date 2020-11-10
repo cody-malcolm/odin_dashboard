@@ -89,6 +89,7 @@ button:hover {
 .dashboard-username {
   font-size: 1.25em;
   color: #333;
+  padding-right: 8em;
 }
 
 .main {
@@ -103,9 +104,15 @@ button:hover {
   box-shadow: 0 20px 10px -10px rgba(0,0,0,0.08);
 }
 
+.inner-dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .main > div {
   padding: 2.5em 0 1.5em 0;
-  width: 80%;
+  width: 50em;
 }
 
 .fab.orange600 {
@@ -161,7 +168,7 @@ button:hover {
 
 .inner-progress {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -179,6 +186,11 @@ button:hover {
 .foundations-logo {
   display: none;
   height: 5.5em;
+}
+
+.path-info-text {
+  width: min-content;
+  padding-right: 10em;
 }
 
 .progress-icon:hover {
@@ -214,6 +226,10 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.spacer {
+  width: 40%;
 }
 
 .social-media {
@@ -303,7 +319,6 @@ button:hover {
 }
 
 @media (max-width: 64em) {
-
   body {
     display: flex;
     flex-direction: column;
@@ -386,6 +401,7 @@ button:hover {
   .dashboard-username {
     font-size: 1.25em;
     color: #333;
+    padding-right: 8em;
   }
 
   .main {
@@ -400,9 +416,15 @@ button:hover {
     box-shadow: 0 20px 10px -10px rgba(0,0,0,0.08);
   }
 
+  .inner-dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .main > div {
     padding: 2.5em 0 1.5em 0;
-    width: 80%;
+    width: 50em;
   }
 
   .fab.orange600 {
@@ -458,7 +480,7 @@ button:hover {
 
   .inner-progress {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
 
@@ -476,6 +498,11 @@ button:hover {
   .foundations-logo {
     display: none;
     height: 5.5em;
+  }
+
+  .path-info-text {
+    width: min-content;
+    padding-right: 10em;
   }
 
   .progress-icon:hover {
@@ -511,6 +538,10 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .spacer {
+    width: 40%;
   }
 
   .social-media {
